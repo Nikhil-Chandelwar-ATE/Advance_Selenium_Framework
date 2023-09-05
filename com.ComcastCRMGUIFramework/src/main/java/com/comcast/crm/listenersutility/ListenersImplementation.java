@@ -19,9 +19,9 @@ import com.comcast.crm.basetest.BaseTest;
 
 public class ListenersImplementation implements ITestListener, ISuiteListener{
 
-	ExtentReports report;
-	ExtentSparkReporter spark;
-	ExtentTest test;
+	public ExtentReports report;
+	public ExtentSparkReporter spark;
+	public static ExtentTest test;
 	Date date;
 	String time;
 
@@ -31,7 +31,7 @@ public class ListenersImplementation implements ITestListener, ISuiteListener{
 		time = date.toString().replace(" ", "_").replace(":", "_");
 
 		//Spark report configuration
-		spark = new ExtentSparkReporter("./reports/report_"+time+".html");
+		spark = new ExtentSparkReporter("./advancedReports/report_"+time+".html");
 		spark.config().setDocumentTitle("Flipkart Advance Report");
 		spark.config().setReportName("Flipkart Report");
 		spark.config().setTheme(Theme.DARK);
@@ -65,20 +65,22 @@ public class ListenersImplementation implements ITestListener, ISuiteListener{
 	}
 
 	public void onTestSkipped(ITestResult result) {
-
+		// TODO Auto-generated method stub
+		
 	}
 
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
-
+		// TODO Auto-generated method stub
+		
 	}
 
 	public void onStart(ITestContext context) {
-
+		// TODO Auto-generated method stub
+		
 	}
 
 	public void onFinish(ITestContext context) {
-
+		// TODO Auto-generated method stub
+		
 	}
-
-
 }

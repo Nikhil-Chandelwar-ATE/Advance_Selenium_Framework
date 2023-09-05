@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
 import com.comcast.crm.basetest.BaseTest;
+import com.comcast.crm.listenersutility.ListenersImplementation;
 import com.comcast.crm.objectrepository.CreatingNewOrganizationPage;
 import com.comcast.crm.objectrepository.HomePage;
 import com.comcast.crm.objectrepository.OrganizationInformationPage;
@@ -15,7 +16,7 @@ public class CreateOrganizationTest extends BaseTest {
 
 	@Test
 	public void createOrganizationTest() throws Throwable {
-		test.log(Status.INFO, "Logged in");
+		ListenersImplementation.test.log(Status.INFO, "Logged in");
 		int randomNumber = javaLib.getRandomNumber();
 		String orgName = excelLib.getDataFromExcelFile("Organization", 1, 2)+randomNumber;
 		

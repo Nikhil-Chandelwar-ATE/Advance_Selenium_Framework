@@ -1,163 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="8" passed="6" failed="0" skipped="0">
+<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-04T12:18:21Z" name="Suite" finished-at="2023-09-04T12:20:51Z" duration-ms="149694">
+  <suite started-at="2023-09-05T10:27:53Z" name="Default suite" finished-at="2023-09-05T10:28:11Z" duration-ms="17543">
     <groups>
       <group name="regressionTest">
-        <method signature="ContactTest.createContactWithOrganizationTest()[pri:0, instance:com.comcast.crm.contacttest.suite.ContactTest@3ad83a66]" name="createContactWithOrganizationTest" class="com.comcast.crm.contacttest.suite.ContactTest"/>
-        <method signature="ContactTest.createContactWithSupportDateTest()[pri:0, instance:com.comcast.crm.contacttest.suite.ContactTest@3ad83a66]" name="createContactWithSupportDateTest" class="com.comcast.crm.contacttest.suite.ContactTest"/>
-        <method signature="OrganizationTest.createOrganizationWithIndustryTest()[pri:0, instance:com.comcast.crm.organizationtest.suite.OrganizationTest@3cce5371]" name="createOrganizationWithIndustryTest" class="com.comcast.crm.organizationtest.suite.OrganizationTest"/>
-        <method signature="OrganizationTest.createOrganizationWithPhoneTest()[pri:0, instance:com.comcast.crm.organizationtest.suite.OrganizationTest@3cce5371]" name="createOrganizationWithPhoneTest" class="com.comcast.crm.organizationtest.suite.OrganizationTest"/>
+        <method signature="OrganizationTest.createOrganizationWithPhoneTest()[pri:0, instance:com.comcast.crm.organizationtest.suite.OrganizationTest@6f204a1a]" name="createOrganizationWithPhoneTest" class="com.comcast.crm.organizationtest.suite.OrganizationTest"/>
       </group> <!-- regressionTest -->
-      <group name="smokeTest">
-        <method signature="ContactTest.createContactTest()[pri:0, instance:com.comcast.crm.contacttest.suite.ContactTest@3ad83a66]" name="createContactTest" class="com.comcast.crm.contacttest.suite.ContactTest"/>
-        <method signature="OrganizationTest.createOrganizationTest()[pri:0, instance:com.comcast.crm.organizationtest.suite.OrganizationTest@3cce5371]" name="createOrganizationTest" class="com.comcast.crm.organizationtest.suite.OrganizationTest"/>
-      </group> <!-- smokeTest -->
     </groups>
-    <test started-at="2023-09-04T12:18:21Z" name="Test" finished-at="2023-09-04T12:20:51Z" duration-ms="149694">
-      <class name="com.comcast.crm.contacttest.suite.ContactTest">
-        <test-method is-config="true" signature="reportConfiguration()[pri:0, instance:com.comcast.crm.contacttest.suite.ContactTest@3ad83a66]" started-at="2023-09-04T12:18:21Z" name="reportConfiguration" finished-at="2023-09-04T12:18:21Z" duration-ms="8" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- reportConfiguration -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.comcast.crm.contacttest.suite.ContactTest@3ad83a66]" started-at="2023-09-04T12:18:21Z" name="launchBrowser" finished-at="2023-09-04T12:18:27Z" duration-ms="6316" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="login(org.testng.ITestResult)[pri:0, instance:com.comcast.crm.contacttest.suite.ContactTest@3ad83a66]" started-at="2023-09-04T12:18:27Z" name="login" finished-at="2023-09-04T12:18:32Z" duration-ms="4721" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=createContactTest status=SUCCESS method=ContactTest.createContactTest()[pri:0, instance:com.comcast.crm.contacttest.suite.ContactTest@3ad83a66] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="createContactTest()[pri:0, instance:com.comcast.crm.contacttest.suite.ContactTest@3ad83a66]" started-at="2023-09-04T12:18:32Z" name="createContactTest" finished-at="2023-09-04T12:18:49Z" duration-ms="16636" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createContactTest -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:com.comcast.crm.contacttest.suite.ContactTest@3ad83a66]" started-at="2023-09-04T12:18:49Z" name="logout" finished-at="2023-09-04T12:18:51Z" duration-ms="2586" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method is-config="true" signature="login(org.testng.ITestResult)[pri:0, instance:com.comcast.crm.contacttest.suite.ContactTest@3ad83a66]" started-at="2023-09-04T12:18:51Z" name="login" finished-at="2023-09-04T12:18:55Z" duration-ms="3990" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=createContactWithOrganizationTest status=SUCCESS method=ContactTest.createContactWithOrganizationTest()[pri:0, instance:com.comcast.crm.contacttest.suite.ContactTest@3ad83a66] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="createContactWithOrganizationTest()[pri:0, instance:com.comcast.crm.contacttest.suite.ContactTest@3ad83a66]" started-at="2023-09-04T12:18:55Z" name="createContactWithOrganizationTest" finished-at="2023-09-04T12:19:13Z" duration-ms="17333" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createContactWithOrganizationTest -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:com.comcast.crm.contacttest.suite.ContactTest@3ad83a66]" started-at="2023-09-04T12:19:13Z" name="logout" finished-at="2023-09-04T12:19:15Z" duration-ms="2457" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method is-config="true" signature="login(org.testng.ITestResult)[pri:0, instance:com.comcast.crm.contacttest.suite.ContactTest@3ad83a66]" started-at="2023-09-04T12:19:15Z" name="login" finished-at="2023-09-04T12:19:19Z" duration-ms="4255" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=createContactWithSupportDateTest status=SUCCESS method=ContactTest.createContactWithSupportDateTest()[pri:0, instance:com.comcast.crm.contacttest.suite.ContactTest@3ad83a66] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="createContactWithSupportDateTest()[pri:0, instance:com.comcast.crm.contacttest.suite.ContactTest@3ad83a66]" started-at="2023-09-04T12:19:19Z" name="createContactWithSupportDateTest" finished-at="2023-09-04T12:19:35Z" duration-ms="15933" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createContactWithSupportDateTest -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:com.comcast.crm.contacttest.suite.ContactTest@3ad83a66]" started-at="2023-09-04T12:19:35Z" name="logout" finished-at="2023-09-04T12:19:38Z" duration-ms="2600" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.comcast.crm.contacttest.suite.ContactTest@3ad83a66]" started-at="2023-09-04T12:19:38Z" name="closeBrowser" finished-at="2023-09-04T12:19:38Z" duration-ms="338" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="executeAfterSuite()[pri:0, instance:com.comcast.crm.contacttest.suite.ContactTest@3ad83a66]" started-at="2023-09-04T12:20:51Z" name="executeAfterSuite" finished-at="2023-09-04T12:20:51Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- executeAfterSuite -->
-      </class> <!-- com.comcast.crm.contacttest.suite.ContactTest -->
+    <test started-at="2023-09-05T10:27:53Z" name="Default test" finished-at="2023-09-05T10:28:11Z" duration-ms="17543">
       <class name="com.comcast.crm.organizationtest.suite.OrganizationTest">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.comcast.crm.organizationtest.suite.OrganizationTest@3cce5371]" started-at="2023-09-04T12:19:38Z" name="launchBrowser" finished-at="2023-09-04T12:19:42Z" duration-ms="3373" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.comcast.crm.organizationtest.suite.OrganizationTest@6f204a1a]" started-at="2023-09-05T10:27:53Z" name="launchBrowser" finished-at="2023-09-05T10:27:58Z" duration-ms="4357" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="login(org.testng.ITestResult)[pri:0, instance:com.comcast.crm.organizationtest.suite.OrganizationTest@3cce5371]" started-at="2023-09-04T12:19:42Z" name="login" finished-at="2023-09-04T12:19:46Z" duration-ms="4855" status="PASS">
+        <test-method is-config="true" signature="login(org.testng.ITestResult)[pri:0, instance:com.comcast.crm.organizationtest.suite.OrganizationTest@6f204a1a]" started-at="2023-09-05T10:27:58Z" name="login" finished-at="2023-09-05T10:28:00Z" duration-ms="2667" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=createOrganizationTest status=SUCCESS method=OrganizationTest.createOrganizationTest()[pri:0, instance:com.comcast.crm.organizationtest.suite.OrganizationTest@3cce5371] output={null}]]]>
+                <![CDATA[[TestResult name=createOrganizationWithPhoneTest status=SUCCESS method=OrganizationTest.createOrganizationWithPhoneTest()[pri:0, instance:com.comcast.crm.organizationtest.suite.OrganizationTest@6f204a1a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="createOrganizationTest()[pri:0, instance:com.comcast.crm.organizationtest.suite.OrganizationTest@3cce5371]" started-at="2023-09-04T12:19:46Z" name="createOrganizationTest" finished-at="2023-09-04T12:20:03Z" duration-ms="16201" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createOrganizationTest -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:com.comcast.crm.organizationtest.suite.OrganizationTest@3cce5371]" started-at="2023-09-04T12:20:03Z" name="logout" finished-at="2023-09-04T12:20:05Z" duration-ms="2120" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method is-config="true" signature="login(org.testng.ITestResult)[pri:0, instance:com.comcast.crm.organizationtest.suite.OrganizationTest@3cce5371]" started-at="2023-09-04T12:20:05Z" name="login" finished-at="2023-09-04T12:20:08Z" duration-ms="3672" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=createOrganizationWithIndustryTest status=SUCCESS method=OrganizationTest.createOrganizationWithIndustryTest()[pri:0, instance:com.comcast.crm.organizationtest.suite.OrganizationTest@3cce5371] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="createOrganizationWithIndustryTest()[pri:0, instance:com.comcast.crm.organizationtest.suite.OrganizationTest@3cce5371]" started-at="2023-09-04T12:20:08Z" name="createOrganizationWithIndustryTest" finished-at="2023-09-04T12:20:25Z" duration-ms="16464" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createOrganizationWithIndustryTest -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:com.comcast.crm.organizationtest.suite.OrganizationTest@3cce5371]" started-at="2023-09-04T12:20:25Z" name="logout" finished-at="2023-09-04T12:20:27Z" duration-ms="2518" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method is-config="true" signature="login(org.testng.ITestResult)[pri:0, instance:com.comcast.crm.organizationtest.suite.OrganizationTest@3cce5371]" started-at="2023-09-04T12:20:27Z" name="login" finished-at="2023-09-04T12:20:32Z" duration-ms="4514" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=createOrganizationWithPhoneTest status=SUCCESS method=OrganizationTest.createOrganizationWithPhoneTest()[pri:0, instance:com.comcast.crm.organizationtest.suite.OrganizationTest@3cce5371] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="createOrganizationWithPhoneTest()[pri:0, instance:com.comcast.crm.organizationtest.suite.OrganizationTest@3cce5371]" started-at="2023-09-04T12:20:32Z" name="createOrganizationWithPhoneTest" finished-at="2023-09-04T12:20:48Z" duration-ms="16291" status="PASS">
+        <test-method signature="createOrganizationWithPhoneTest()[pri:0, instance:com.comcast.crm.organizationtest.suite.OrganizationTest@6f204a1a]" started-at="2023-09-05T10:28:00Z" name="createOrganizationWithPhoneTest" finished-at="2023-09-05T10:28:09Z" duration-ms="8969" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createOrganizationWithPhoneTest -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:com.comcast.crm.organizationtest.suite.OrganizationTest@3cce5371]" started-at="2023-09-04T12:20:48Z" name="logout" finished-at="2023-09-04T12:20:51Z" duration-ms="2263" status="PASS">
+        <test-method is-config="true" signature="logout()[pri:0, instance:com.comcast.crm.organizationtest.suite.OrganizationTest@6f204a1a]" started-at="2023-09-05T10:28:09Z" name="logout" finished-at="2023-09-05T10:28:11Z" duration-ms="1315" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.comcast.crm.organizationtest.suite.OrganizationTest@3cce5371]" started-at="2023-09-04T12:20:51Z" name="closeBrowser" finished-at="2023-09-04T12:20:51Z" duration-ms="205" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.comcast.crm.organizationtest.suite.OrganizationTest@6f204a1a]" started-at="2023-09-05T10:28:11Z" name="closeBrowser" finished-at="2023-09-05T10:28:11Z" duration-ms="214" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- com.comcast.crm.organizationtest.suite.OrganizationTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

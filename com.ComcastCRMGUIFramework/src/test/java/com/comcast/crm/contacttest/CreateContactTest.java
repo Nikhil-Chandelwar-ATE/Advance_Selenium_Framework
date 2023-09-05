@@ -2,14 +2,18 @@ package com.comcast.crm.contacttest;
 
 import org.testng.Assert;
 import org.testng.Reporter;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
 import com.comcast.crm.basetest.BaseTest;
+import com.comcast.crm.listenersutility.ListenersImplementation;
 import com.comcast.crm.objectrepository.ContactInformationPage;
 import com.comcast.crm.objectrepository.ContactsPage;
 import com.comcast.crm.objectrepository.CreatingNewContactPage;
 import com.comcast.crm.objectrepository.HomePage;
 
+@Listeners(com.comcast.crm.listenersutility.ListenersImplementation.class)
 public class CreateContactTest extends BaseTest{
 
 	@Test
@@ -33,6 +37,6 @@ public class CreateContactTest extends BaseTest{
 		webDriverLib.waitUntilElementLoaded(driver, contactInfo.getContactInformation());
 
 		Assert.assertEquals(contactInfo.getContactInformation().isDisplayed(), true, "Contact Information : ");
-		Reporter.log(contactInfo.getContactInformation().getText(), true);
+		ListenersImplementation.test.log(Status.PASS, "Pass");
 	}
 }
