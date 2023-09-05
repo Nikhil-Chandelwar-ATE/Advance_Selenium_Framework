@@ -5,7 +5,9 @@ import java.util.Set;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
 import com.comcast.crm.basetest.BaseTest;
+import com.comcast.crm.listenersutility.ListenersImplementation;
 import com.comcast.crm.objectrepository.ContactInformationPage;
 import com.comcast.crm.objectrepository.ContactsPage;
 import com.comcast.crm.objectrepository.CreatingNewContactPage;
@@ -33,9 +35,9 @@ public class ContactTest extends BaseTest {
 		webDriverLib.waitUntilElementLoaded(driver, contactInfo.getContactInformation());
 
 		if (contactInfo.getContactInformation().getText().contains(lastName)) {
-			System.out.println("Pass ============ " + contactInfo.getContactInformation().getText());
+			ListenersImplementation.test.log(Status.PASS, contactInfo.getContactInformation().getText());
 		} else {
-			System.out.println("Fail ============ Contact not created");
+			ListenersImplementation.test.log(Status.FAIL, "========== Fail ==========");
 		}
 	}
 	
@@ -69,10 +71,10 @@ public class ContactTest extends BaseTest {
 		contactInfo.getContactInformation().getText();
 		webDriverLib.waitUntilElementLoaded(driver, contactInfo.getContactInformation());
 		if (contactInfo.getContactInformation().getText().contains(lastName)) {
-			System.out.println("Pass ============ " +contactInfo.getContactInformation().getText());
-			System.out.println("Organization Name : "+contactInfo.getOrganizationName().getText());
+			ListenersImplementation.test.log(Status.PASS, contactInfo.getContactInformation().getText());
+			ListenersImplementation.test.log(Status.PASS, contactInfo.getOrganizationName().getText());
 		} else {
-			System.out.println("Fail ============ Contact not created");
+			ListenersImplementation.test.log(Status.FAIL, "========== Fail ==========");
 		}
 	}
 	
@@ -103,11 +105,11 @@ public class ContactTest extends BaseTest {
 		webDriverLib.waitUntilElementLoaded(driver, contactInfo.getContactInformation());
 
 		if (contactInfo.getContactInformation().getText().contains(lastName)) {
-			System.out.println("Pass ============ " + contactInfo.getContactInformation().getText());
-			System.out.println("Support start date : "+contactInfo.getSupportStartDate().getText());
-			System.out.println("Support end date : "+contactInfo.getSupportEndDate().getText());
+			ListenersImplementation.test.log(Status.PASS, contactInfo.getContactInformation().getText());
+			ListenersImplementation.test.log(Status.PASS, "Support start date : "+contactInfo.getSupportStartDate().getText());
+			ListenersImplementation.test.log(Status.PASS, "Support end date : "+contactInfo.getSupportEndDate().getText());
 		} else {
-			System.out.println("Fail ============ Contact not created");
+			ListenersImplementation.test.log(Status.FAIL, "========== Fail ==========");
 		}
 	}
 }

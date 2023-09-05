@@ -2,7 +2,9 @@ package com.comcast.crm.organizationtest.suite;
 
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
 import com.comcast.crm.basetest.BaseTest;
+import com.comcast.crm.listenersutility.ListenersImplementation;
 import com.comcast.crm.objectrepository.CreatingNewOrganizationPage;
 import com.comcast.crm.objectrepository.HomePage;
 import com.comcast.crm.objectrepository.OrganizationInformationPage;
@@ -31,9 +33,9 @@ public class OrganizationTest extends BaseTest {
 		webDriverLib.waitUntilElementLoaded(driver, orgInfo.getOrganizationInformation());
 		
 		if (orgInfo.getOrganizationInformation().getText().contains(orgName)) {
-			System.out.println("Pass ============ "+orgInfo.getOrganizationInformation().getText());
+			ListenersImplementation.test.log(Status.PASS, orgInfo.getOrganizationInformation().getText());
 		} else {
-			System.out.println("Fail ============ Organization not created");	
+			ListenersImplementation.test.log(Status.FAIL, "========== Fail ==========");
 		}
 	}
 	
@@ -60,11 +62,11 @@ public class OrganizationTest extends BaseTest {
 		webDriverLib.waitUntilElementLoaded(driver, orgInfo.getOrganizationInformation());
 
 		if (orgInfo.getOrganizationInformation().getText().contains(orgName)) {
-			System.out.println("Pass ============ " + orgInfo.getOrganizationInformation().getText());
-			System.out.println("Industry : " + orgInfo.getIndustry().getText());
-			System.out.println("Type : " + orgInfo.getType().getText());
+			ListenersImplementation.test.log(Status.PASS, orgInfo.getOrganizationInformation().getText());
+			ListenersImplementation.test.log(Status.PASS, "Industry : " + orgInfo.getIndustry().getText());
+			ListenersImplementation.test.log(Status.PASS, "Type : " + orgInfo.getType().getText());
 		} else {
-			System.out.println("Fail ============ Organization not created");
+			ListenersImplementation.test.log(Status.FAIL, "========== Fail ==========");
 		}
 	}
 	
@@ -89,11 +91,11 @@ public class OrganizationTest extends BaseTest {
 		webDriverLib.waitUntilElementLoaded(driver, orgInfo.getOrganizationInformation());
 
 		if (orgInfo.getOrganizationInformation().getText().contains(orgName)) {
-			System.out.println("Pass ============ " + orgInfo.getOrganizationInformation().getText());
-			System.out.println("Oragnization Name : " + orgInfo.getOrganizationName().getText());
-			System.out.println("Phone Number : " + orgInfo.getPhone().getText());
+			ListenersImplementation.test.log(Status.PASS, orgInfo.getOrganizationInformation().getText());
+			ListenersImplementation.test.log(Status.PASS, "Oragnization Name : " + orgInfo.getOrganizationName().getText());
+			ListenersImplementation.test.log(Status.PASS, "Phone Number : " + orgInfo.getPhone().getText());
 		} else {
-			System.out.println("Fail ============ Organization not created");
+			ListenersImplementation.test.log(Status.FAIL, "========== Fail ==========");
 		}
 	}
 }

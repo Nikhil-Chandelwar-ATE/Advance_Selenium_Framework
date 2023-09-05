@@ -35,10 +35,10 @@ public class BaseTest {
 	public static WebDriver sDriver;
 	Date date;
 	
-	@Parameters("browser")
+	//@Parameters("browser")
 	@BeforeClass(groups = {"regressionTest","smokeTest"})
-	public void launchBrowser(String BROWSER) throws IOException {
-		//String BROWSER = fileLib.getDataFromProprtyFile("browser");
+	public void launchBrowser() throws IOException {
+		String BROWSER = fileLib.getDataFromProprtyFile("browser");
 		String URL = fileLib.getDataFromProprtyFile("url");
 		if (BROWSER.equals("chrome")) {
 			driver = new ChromeDriver();
