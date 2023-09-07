@@ -2,8 +2,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 	<listeners>
-		<listener
-			class-name="com.comcast.crm.listenersutility.ListenersImplementation"></listener>
+		<listener class-name="com.comcast.crm.listenersutility.ListenersImplementation"></listener>
 	</listeners>
 	<test thread-count="5" name="Test">
 		<classes>
@@ -12,8 +11,7 @@
 					<include name="createContactWithOrganizationTest"></include>
 				</methods>
 			</class>
-			<class
-				name="com.comcast.crm.organizationtest.suite.OrganizationTest">
+			<class name="com.comcast.crm.organizationtest.suite.OrganizationTest">
 				<methods>
 					<include name="createOrganizationWithPhoneTest"></include>
 				</methods>
