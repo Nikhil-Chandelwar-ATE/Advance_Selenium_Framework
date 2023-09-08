@@ -49,7 +49,7 @@ public class BaseTest {
 		} else {
 			driver = new ChromeDriver();
 		}
-		sDriver = driver;
+		sDriver = driver; 
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		driver.get(URL);

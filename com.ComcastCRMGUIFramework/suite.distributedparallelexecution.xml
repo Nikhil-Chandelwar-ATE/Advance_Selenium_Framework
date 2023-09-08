@@ -2,21 +2,17 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite" thread-count="2" parallel="tests">
 	<listeners>
-		<listener
-			class-name="com.comcast.crm.listenersutility.ListenersImplementation"></listener>
+		<listener class-name="com.comcast.crm.listenersutility.ListenersImplementation"></listener>
 	</listeners>
 	<test name="Test-1">
 		<classes>
 			<class name="com.comcast.crm.contacttest.suite.ContactTest" />
 		</classes>
-	</test> <!--
-	Test -->
+	</test> <!--Test -->
 	<test name="Test-2">
 		<classes>
 			<class
 				name="com.comcast.crm.organizationtest.suite.OrganizationTest" />
 		</classes>
-	</test> <!--
-	Test -->
-</suite> <!--
-Suite -->
+	</test> <!--Test -->
+</suite> <!--Suite -->
