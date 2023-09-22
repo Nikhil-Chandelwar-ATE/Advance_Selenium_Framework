@@ -14,8 +14,6 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Parameters;
-
 import com.comcast.crm.generic.fileutility.ExcelUtility;
 import com.comcast.crm.generic.fileutility.FileUtility;
 import com.comcast.crm.generic.webdriverutility.JavaUtility;
@@ -26,7 +24,7 @@ import com.comcast.crm.objectrepository.LoginPage;
 
 public class BaseTest {
 
-	public WebDriver driver = null;
+	public WebDriver driver;
 	public FileUtility fileLib = new FileUtility();
 	public WebDriverUtility webDriverLib = new WebDriverUtility();
 	public ExcelUtility excelLib = new ExcelUtility();

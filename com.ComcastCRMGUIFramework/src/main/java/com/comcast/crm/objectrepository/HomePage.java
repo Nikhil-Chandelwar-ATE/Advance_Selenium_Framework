@@ -30,7 +30,7 @@ public class HomePage {
 	@FindBy(xpath = "//a[contains(text(),'Home')]")
 	private WebElement homeLink;
 
-	@FindBy(linkText = "More")
+	@FindBy(xpath = "//a[text()='More']")
 	private WebElement moreLink;
 
 	@FindBy(linkText = "Campaigns")
@@ -38,6 +38,20 @@ public class HomePage {
 
 	@FindBy(xpath = "//img[@title='vtiger-crm-logo.gif']")
 	private WebElement vTigerLogo;
+	
+	@FindBy(xpath = "//a[@name='Invoice']")
+	private WebElement invoiceLink;
+	
+	@FindBy(xpath = "//a[text()='Products']")
+	private WebElement productsLink;
+
+	public WebElement getInvoiceLink() {
+		return invoiceLink;
+	}
+
+	public WebElement getProductsLink() {
+		return productsLink;
+	}
 
 	public WebDriver getDriver() {
 		return driver;
